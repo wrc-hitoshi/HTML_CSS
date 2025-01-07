@@ -24,6 +24,40 @@ buttom:active（在點擊buttom的瞬間會出現什麼外觀變化）
 border-radius(邊角圓滑度) border-style(邊框樣式) 
 cursor(鼠標放上去時會變成可點選的箭頭)
 
+類別標籤(<button></button>)
+在html框架中將<button>變成<button class="test1button">
+在css style框架中 輸入上面.""中的內容，之後再加上雙引號{}
+ex:
+ <style>
+    .test1button
+    {
+    color:gray
+    background-color:white
+    }
+</style>
+如果該網站用的按鈕都一樣
+可以將button先定義好邊框和顏色，
+再用class= "test1button"修改html、用.test1button修改css
+
+再用id= "test1h1"修改html、用#test1h1修改css
+
+類別標籤(<h1></h1>)
+在html框架中將<h1>變成<h1 id="test1h1">
+在css style框架中 輸入#""中的內容，之後再加上雙引號{}
+ex:
+<style>
+    #test1h1
+    {
+    color:red
+    }
+</style>
+
+而id和class的用法很接近 class在css中用「.」id則是用「#」
+id就像身分編碼一樣只能對應一組，
+而class像群組一次可以對應多個。
+
+id、class命名規則：
+1.只能有 _ - 英文字 數字 2.開頭不能為數字
 
 
 
@@ -45,17 +79,33 @@ cursor(鼠標放上去時會變成可點選的箭頭)
     button:active{
         background-color:rgb(71, 71, 71);
     }
+    .test1button{
+        color:gray;
+        background-color:rgb(255, 255, 255);
+        border-color:black;
+        border-style:solid;
+        border-width:1px;
+    }
+    .test1button:hover{
+        background-color:antiquewhite;
+    }
+    .test1button:active{
+        background-color:rgb(159, 159, 159);
+    }
+    #test1h2{
+        color:aquamarine
+    }
 
 </style>
 
 <h1>關於那些轉生到異世界的事</h1>
 <button>like</button>
 <button>sub</button>
-<button>share</button>
-
+<button>share</button><br/><br/>
+<button class="test1button">測試1</button>
+<button class="test1button">測試1</button>
 <hr/>
-
-<h2>1.我是hitoshi</h2>
+<h2 id="test1h2">1.我是hitoshi</h2>
 <p>我的名字叫hitoshi,射手座b形,mbti是intp,
     <br/>大學時就讀應用日文系</p>
     
