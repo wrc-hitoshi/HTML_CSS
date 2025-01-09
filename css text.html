@@ -1,0 +1,69 @@
+<!--
+css中 text-align代表文字的位置置中、左邊、右邊
+font:p標籤中，文字的參數
+line:關於行
+<span>標籤：把在標籤內的內容，獨自獨立一段起來
+    ex:<p>我的名字是<span>hitoshi</span>。</p>
+text-decoration為css中的文字樣式 
+    ex:text-decoration:underline（加上底線）
+若是所有文字的字體或是某個參數在整個網頁都一樣
+就可以在一開始就在css內設定好，而不用重複寫。
+    ex:p{
+      color:black;
+      font-family:"LXGW WenKai TC", serif;
+      font-style: normal;
+    }
+*{}暴力寫法：代表這個這段html中所有的標籤，在css內都使用相同的屬性。
+    ex:*{
+        color:black;
+        font-size:30px;
+    }
+-->
+
+
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+    p,h1{
+        font-family: "LXGW WenKai TC", serif;
+        font-style: normal;
+    }
+    .title{
+        text-align: center; 
+        font-size: 40px;
+    }
+    .content-start{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .content{
+        line-height: 32px;
+    }
+    .content-blue{
+        color:blue;
+        text-decoration: underline;
+    }
+    .content-end{
+        color:red;
+    }
+    .footer{
+        text-align: center;
+        font-weight: 200;
+    }
+    .company{
+        color:blueviolet;
+    }
+</style>
+<h1 class="title">條款修訂公告</h1>
+<p class="content-start">親愛的會員，您好</p>
+
+<p class="content">
+    本公司將變更部分<span class="content-blue">「運費」</span>
+    及<span class="content-blue">「退換貨條款」</span><br/>
+    並從2025年1月9日生效。
+</p>
+<p class="content-end">本信件為系統自動發送</p>
+<hr/>
+<p class="footer">
+    <span class="company">熊熊貓貓國際</span><br/>
+    服務時間:pm9-am3
+</p>
