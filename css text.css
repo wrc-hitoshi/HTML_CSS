@@ -1,0 +1,60 @@
+/* 
+CSS box model
+在網頁開發者工具裡 comuted(已計算)是一個盒狀圖
+從最外圍到最內圈依序為：
+position margin（外距：邊框外的距離）
+border（邊框） 
+padding(內距：內容和邊框的距離) 
+以及最中間的部分(文字)。
+簡易寫法
+.content{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-left: 55px;
+}
+相當於
+.content{
+    margin:40px 20px 5px 55px;（遵循上右下左的順序）
+    若是只給兩個值
+    margin:40px 5px;
+    那就是上下外距為40px、而左右外距為5px。
+}
+若是獨立出來一個css檔案 就不用再寫style了
+*/
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+p,h1{
+    font-family: "LXGW WenKai TC", serif;
+    font-style: normal;
+}
+.title{
+    text-align: center; 
+    font-size: 40px;
+}
+.content-start{
+    font-size: 25px;
+    font-weight: 400;
+}
+.content{
+    line-height: 32px;
+    width:500px;
+    border-style: double;
+    border-width: 5px;
+    padding:35px;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.content-blue{
+    color:blue;
+    text-decoration: underline;
+}
+.content-end{
+    color:red;
+}
+.footer{
+    text-align: center;
+    font-weight: 200;
+}
+.company{
+    color:blueviolet;
+}

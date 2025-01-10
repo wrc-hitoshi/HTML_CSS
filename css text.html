@@ -21,81 +21,45 @@ text-decoration為css中的文字樣式
 關於網頁開發者工具：
 safari的顯示網頁原始碼，chrome的f12
 在元件中檢視各個文字有用什麼css去美化 
+
+一份完整的HTML架構：
+<!DOCTYPE html>(讓瀏覽器知道這是一份html資料)
+<html>
+    <head></head>（在這放入網頁的資訊、連結、CSS）
+    <body></body>（放入網頁的內容、文字）
+</html>
+
+<title></title>要放在head標籤裡面
+（幫這個網站取名字）
+將css獨立出來成一個檔案，在連結回html的方法
+<link rel="和這份連結的檔案是什麼關係" href="檔案名稱.副檔名">
+ex:
+    <link rel="stylesheet" href="css text.css">
+這樣就可以透過上面這串代碼，將其他css參數帶入此份html檔了。
+
 -->
 
+<!DOCTYPE html>
 
-<style> 
-/* 
-CSS box model
-在網頁開發者工具裡 comuted(已計算)是一個盒狀圖
-從最外圍到最內圈依序為：
-position margin（外距：邊框外的距離）
-border（邊框） 
-padding(內距：內容和邊框的距離) 
-以及最中間的部分(文字)。
-簡易寫法
-.content{
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    margin-left: 55px;
-}
-相當於
-.content{
-    margin:40px 20px 5px 55px;（遵循上右下左的順序）
-    若是只給兩個值
-    margin:40px 5px;
-    那就是上下外距為40px、而左右外距為5px。
-}
-*/
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
-    p,h1{
-        font-family: "LXGW WenKai TC", serif;
-        font-style: normal;
-    }
-    .title{
-        text-align: center; 
-        font-size: 40px;
-    }
-    .content-start{
-        font-size: 25px;
-        font-weight: 400;
-    }
-    .content{
-        line-height: 32px;
-        width:500px;
-        border-style: double;
-        border-width: 5px;
-        padding:35px;
-        margin-top:40px;
-        margin-bottom:40px;
-    }
-    .content-blue{
-        color:blue;
-        text-decoration: underline;
-    }
-    .content-end{
-        color:red;
-    }
-    .footer{
-        text-align: center;
-        font-weight: 200;
-    }
-    .company{
-        color:blueviolet;
-    }
-</style>
-<h1 class="title">條款修訂公告</h1>
-<p class="content-start">親愛的會員，您好</p>
+<html>
+    <head>
+        <title>條款修訂公告</title>
+        <link rel="stylesheet" href="css text.css">
+    </head>
+    <body>
+        <h1 class="title">條款修訂公告</h1>
+        <p class="content-start">親愛的會員，您好</p>
 
-<p class="content">
-    本公司將變更部分<span class="content-blue">「運費」</span>
-    及<span class="content-blue">「退換貨條款」</span><br/>
-    並從2025年1月9日生效。
-</p>
-<p class="content-end">本信件為系統自動發送</p>
-<hr/>
-<p class="footer">
-    <span class="company">熊熊貓貓國際</span><br/>
-    服務時間:pm9-am3
-</p>
+        <p class="content">
+            本公司將變更部分<span class="content-blue">「運費」</span>
+            及<span class="content-blue">「退換貨條款」</span><br/>
+            並從2025年1月9日生效。
+        </p>
+        <p class="content-end">本信件為系統自動發送</p>
+        <hr/>
+        <p class="footer">
+            <span class="company">熊熊貓貓國際</span><br/>
+            服務時間:pm9-am3
+        </p>
+    </body>
+</html>
