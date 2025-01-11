@@ -1,0 +1,64 @@
+<!-- 
+關於在網站上加入圖片的方法：
+在<body>內輸入<img src="圖片檔名.jpg">
+    ex:<img src="miho.jpg">
+    在img src中也可以給他分群組 加入class或id
+    ex:<img class="webphoto" src="miho.jpg">
+錯誤提醒：出現bug一定要先檢查標籤是否打對打完整。
+    false:<img src="miho.jpg" (少了後面的「>」)
+    true:<img src="miho.jpg">
+
+加入video標籤：
+    在body中加入
+    <video>
+        <source src="影片名稱.mp4">
+    </video>
+若想要影片為可動，則需要再改成
+    <video control>
+    而在影片加上屬性的話，要在<video>標籤裡加入
+        ex:<video class="web" control>
+    才能有辦法在css內去做控制。
+製作超連結的方法：
+    輸入一個a標籤，在裡面輸入目標連結以及文字
+    (a標籤可以放在p標籤內)
+    <a href="網站連結">你想呈現的文字</a>
+    ex: <a href="https://github.com">
+            github官網
+        <a>
+    href的功用指的是 導向到這個網站
+    而如果想要網站開新分頁，則需要加上 target="_blank"
+    ex: <a href="https://github.com" target="_blank">
+        github官網
+    </a>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <link rel="stylesheet" href="img&video.css">
+    </head>
+    <body>
+        <video class="webvideo" controls>
+            <source src="7860-1.mov">
+        </video>
+        <h1 class="title">【python】4天初學者Python教學 #python #python教學 #python入門</h1>
+        <h2 class="little-title">GrandmaCan -我阿嬤都會</h2>
+
+        <img class="webphoto" src="mihowebtest.jpeg">
+        <!-- 按鈕文字都14像素 -->
+        <button class="subscribe-button">訂閱</button>
+        <button class="thumb-button">按讚</button>
+        <button class="share-button">分享</button>
+        <hr/>
+
+        <p class="content">
+            觀看次數：878,787次  1987年8月7日 <br />
+            👵阿嬤都能學會的python教學 <br />
+            ✏️扎實的練習、有趣的專案，讓你學會如何應用python到實際生活中! <br />
+           
+            <a href="https://github.com" target="_blank">
+                GITHUB
+            </a>
+        </p>
+    </body>
+</html>
