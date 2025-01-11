@@ -1,0 +1,81 @@
+p,h1,h2{
+    font-family: Noto,Serif,TC;
+    padding:20px;
+    margin:12px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 900;
+}
+.little-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subscribe-button{
+    font-size:14px;
+    width: 60px;
+    height: 36px;
+    border-radius: 18px;
+    cursor:pointer;
+    color:white;
+    background-color: black;
+    border-style:none;
+}
+
+.subscribe-button:hover{
+    background-color:rgb(31, 31, 31);
+}
+
+.subscribe-button:active{
+    background-color:rgb(61, 61, 61);
+}
+
+
+.thumb-button{
+    font-size:14px;
+    width: 60px;
+    height: 36px;
+    border-radius: 18px;
+    cursor:pointer;
+    border-style:solid;
+    border-color:rgb(195, 195, 195);
+    border-width:1px;
+    background-color: white;
+}
+
+.thumb-button:hover{
+    background-color:rgb(219, 219, 219);
+}
+
+.thumb-button:active{
+    background-color:rgb(173, 173, 173);
+}
+
+
+.share-button{
+    font-size:14px;
+    width: 60px;
+    height: 36px;
+    border-radius: 18px;
+    cursor:pointer;
+    border-style:none;
+    border-color:rgb(195, 195, 195);
+    background-color: rgb(242, 242, 242);
+}
+
+.share-button:hover{
+    background-color:rgb(219, 219, 219);
+}
+
+.share-button:active{
+    background-color:rgb(173, 173, 173);
+}
+.content{
+    font-weight: 200;
+    color:rgb(60,60,60);
+    line-height: 25px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 12px;
+}
