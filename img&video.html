@@ -35,6 +35,28 @@
     <a href="www.youtube.com" target="_blank">
         <img src="image.jpeg">        
     </a>
+
+DIV標籤的功用（div容器）
+<div></div>的display預設為block，中間可塞入文字、有點像h標籤
+在調整排版時，若是直接在css中調整寬度(width)、文字或圖片等等的元素
+會受到padding和margin影響、還是看起來不整齊。（利用網頁檢查中
+的model box看，padding和margin會突出一截）
+應用方法：在div標籤內設定一個class，接著在css中定義這個class的
+寬度為xxx
+    ex:
+        <div class="information">
+            <h1><h1>
+            <p></p>
+            <img src="img.jpg">
+        </div>
+    在css中
+        .information{
+            width: 650px;    
+            border-width: 1px;
+            margin: 5px;
+            padding: 12px;
+        }
+
 -->
 <!DOCTYPE html>
 <html>
@@ -43,27 +65,30 @@
         <link rel="stylesheet" href="img&video.css">
     </head>
     <body>
-        <video class="webvideo" controls>
-            <source src="7860-1.mov">
-        </video>
-        <h1 class="title">【python】4天初學者Python教學 #python #python教學 #python入門</h1>
-        <h2 class="little-title">GrandmaCan -我阿嬤都會</h2>
-
-        <img class="webphoto" src="mihowebtest.jpeg">
-        <!-- 按鈕文字都14像素 -->
-        <button class="subscribe-button">訂閱</button>
-        <button class="thumb-button">按讚</button>
-        <button class="share-button">分享</button>
-        <hr/>
-
-        <p class="content">
-            觀看次數：878,787次  1987年8月7日 <br />
-            👵阿嬤都能學會的python教學 <br />
-            ✏️扎實的練習、有趣的專案，讓你學會如何應用python到實際生活中! <br />
-           
-            <a href="https://github.com" target="_blank">
-                GITHUB
-            </a>
-        </p>
+        <div class="information">
+            <video class="webvideo" controls>
+                <source src="7860-1.mov">
+            </video>
+            <h1 class="title">【python】4天初學者Python教學 #python #python教學 #python入門</h1>
+            
+            <img class="webphoto" src="mihowebtest.jpeg">
+    
+            <h2 class="little-title">GrandmaCan -我阿嬤都會</h2>
+    
+            <button class="subscribe-button">訂閱</button>
+            <button class="thumb-button">按讚</button>
+            <button class="share-button">分享</button>
+            <hr/>
+    
+            <p class="content">
+                觀看次數：878,787次  1987年8月7日 <br />
+                👵阿嬤都能學會的python教學 <br />
+                ✏️扎實的練習、有趣的專案，讓你學會如何應用python到實際生活中! <br />
+               
+                <a href="https://github.com" target="_blank">
+                    GITHUB
+                </a>
+            </p>
+        </div>
     </body>
 </html>

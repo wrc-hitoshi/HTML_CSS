@@ -19,20 +19,50 @@ ex:
         display: inline-block
     } 
 搭配網頁檢查器看，看該物件（文字）的display效果，會更好。
+
+在div容器中，被設定的元素可以用%數來和div設定的值做連動
+    ex:
+        .div{
+            width:200px;
+            margin:12px;
+        }
+        .video{
+            width:80%
+        }
+    這樣的話video的width就會隨著div設定的width值自動做調整
+    也就是160px(200*80%=160)
+
+如何讓同一行的元素（標籤）圖片等等和文字對齊
+在css中運用vertical-align來解決
+    ex:
+        img,button{
+            vertical-align:top
+        }
+    如此一來就會對齊上面
 */
+
+.information{
+    width:1000px;
+    margin: 12px;
+}
 p,h1,h2{
     font-family: Noto,Serif,TC;
     padding:20px;
-    margin:12px;
+    margin:0px;
 }
 
 .title{
     font-size: 24px;
     font-weight: 900;
+    display: block;
 }
+
 .little-title{
     font-size: 18px;
     font-weight: 500;
+    display: inline-block;
+    width:300px;  
+    vertical-align: middle;
 }
 
 .subscribe-button{
@@ -44,6 +74,7 @@ p,h1,h2{
     color:white;
     background-color: black;
     border-style:none;
+    vertical-align: middle;
 }
 
 .subscribe-button:hover{
@@ -65,6 +96,7 @@ p,h1,h2{
     border-color:rgb(195, 195, 195);
     border-width:1px;
     background-color: white;
+    vertical-align: middle;
 }
 
 .thumb-button:hover{
@@ -85,6 +117,7 @@ p,h1,h2{
     border-style:none;
     border-color:rgb(195, 195, 195);
     background-color: rgb(242, 242, 242);
+    vertical-align: middle;
 }
 
 .share-button:hover{
@@ -102,10 +135,11 @@ p,h1,h2{
     border-radius: 12px;
 }
 .webvideo{
-    height: 400px;
+    width: 80%;
     border-radius: 20px;
 }
 .webphoto{
     width: 60px;
     border-radius: 50px;
+    vertical-align: middle;
 }
