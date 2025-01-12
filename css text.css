@@ -1,4 +1,25 @@
 /* 
+css中 text-align代表文字的位置置中、左邊、右邊
+font:p標籤中，文字的參數
+line:關於行
+text-decoration為css中的文字樣式 
+    ex:text-decoration:underline（加上底線）
+若是所有文字的字體或是某個參數在整個網頁都一樣
+就可以在一開始就在css內設定好，而不用重複寫。
+    ex:p{
+        color:black;
+        font-family:"LXGW WenKai TC", serif;
+        font-style: normal;
+    }
+*{}暴力寫法：代表這個這段html中所有的標籤，在css內都使用相同的屬性。
+    ex:*{
+        color:black;
+        font-size:30px;
+    }
+關於網頁開發者工具：
+safari的顯示網頁原始碼，chrome的f12
+在元件中檢視各個文字有用什麼css去美化 
+
 CSS box model
 在網頁開發者工具裡 comuted(已計算)是一個盒狀圖
 從最外圍到最內圈依序為：

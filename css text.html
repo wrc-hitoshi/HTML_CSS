@@ -1,27 +1,4 @@
 <!--
-css中 text-align代表文字的位置置中、左邊、右邊
-font:p標籤中，文字的參數
-line:關於行
-<span>標籤：把在標籤內的內容，獨自獨立一段起來
-    ex:<p>我的名字是<span>hitoshi</span>。</p>
-text-decoration為css中的文字樣式 
-    ex:text-decoration:underline（加上底線）
-若是所有文字的字體或是某個參數在整個網頁都一樣
-就可以在一開始就在css內設定好，而不用重複寫。
-    ex:p{
-      color:black;
-      font-family:"LXGW WenKai TC", serif;
-      font-style: normal;
-    }
-*{}暴力寫法：代表這個這段html中所有的標籤，在css內都使用相同的屬性。
-    ex:*{
-        color:black;
-        font-size:30px;
-    }
-關於網頁開發者工具：
-safari的顯示網頁原始碼，chrome的f12
-在元件中檢視各個文字有用什麼css去美化 
-
 一份完整的HTML架構：
 <!DOCTYPE html>(讓瀏覽器知道這是一份html資料)
 <html>
@@ -31,12 +8,15 @@ safari的顯示網頁原始碼，chrome的f12
 
 <title></title>要放在head標籤裡面
 （幫這個網站取名字）
+<span>標籤：把在標籤內的內容，獨自獨立一段起來
+    ex:<p>我的名字是<span>hitoshi</span>。</p>
 
 將css獨立出來成一個檔案，在連結回html的方法
 <link rel="和這份連結的檔案是什麼關係" href="檔案名稱.副檔名">
 ex:
     <link rel="stylesheet" href="css text.css">
 這樣就可以透過上面這串代碼，將其他css參數帶入此份html檔了。
+
 注意！link rel="stylesheet"中的「stylesheet」是固定用法。
 目的是連結到css，不可替換成其他字元。
 (<link> 標籤連結 CSS 文件時，必須使用 rel="stylesheet")

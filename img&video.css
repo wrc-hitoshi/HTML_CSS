@@ -1,3 +1,25 @@
+/* 
+CSS display
+共有三種類型，放在css中來定義該物件的大小排版設定
+1.block
+    用在<h><p>標籤較多，定義此段文字不論長度
+    在網頁上都「佔一整行」
+2.inline-block
+    用在按鈕、小物件比較多，定義該物件
+    「內容多少（長寬）佔多少，可自由設定大小」
+3.inline
+    用在<a>連結較多，也屬於
+    「內容多少佔多少，但不可設定大小」
+ex:
+    h1{
+        display: block
+    }
+變成
+    h1{
+        display: inline-block
+    } 
+搭配網頁檢查器看，看該物件（文字）的display效果，會更好。
+*/
 p,h1,h2{
     font-family: Noto,Serif,TC;
     padding:20px;
