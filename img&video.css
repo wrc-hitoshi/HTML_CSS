@@ -42,14 +42,29 @@ ex:
 */
 
 .information{
-    width:1000px;
+    width:500px;
     margin: 12px;
 }
+.div1{
+    margin: 0px;
+}
+.div2{
+    margin: 10px;
+}
+.channel{
+    display: inline;
+}
+.channel-information{
+    display: inline-block;
+    margin-right: 50px;
+}
+
 p,h1,h2{
     font-family: Noto,Serif,TC;
-    padding:20px;
-    margin:0px;
+    padding:0px;
+    margin:5px;
 }
+
 
 .title{
     font-size: 24px;
@@ -61,7 +76,7 @@ p,h1,h2{
     font-size: 18px;
     font-weight: 500;
     display: inline-block;
-    width:300px;  
+    width:150px;  
     vertical-align: middle;
 }
 
@@ -135,11 +150,12 @@ p,h1,h2{
     border-radius: 12px;
 }
 .webvideo{
-    width: 80%;
+    width: 98%;
     border-radius: 20px;
 }
 .webphoto{
     width: 60px;
-    border-radius: 50px;
+    border-radius: 10px;
+    margin:5px;
     vertical-align: middle;
 }
