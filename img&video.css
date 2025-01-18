@@ -32,13 +32,15 @@ ex:
     這樣的話video的width就會隨著div設定的width值自動做調整
     也就是160px(200*80%=160)
 
-如何讓同一行的元素（標籤）圖片等等和文字對齊
+如何讓同一行的元素（標籤）圖片等等和文字對齊!!
 在css中運用vertical-align來解決
     ex:
         img,button{
             vertical-align:top
         }
     如此一來就會對齊上面
+    (常有對不齊的狀況，因爲文字多一行或少一行導致版面亂掉。）
+    vertical-align的top是對齊網頁的上面，非兩者平行
 */
 
 .information{
